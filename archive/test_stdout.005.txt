@@ -1,0 +1,3183 @@
+nose.config: INFO: Ignoring files matching ['^\\.', '^_', '^setup\\.py$']
+sstableverify_test (offline_tools_test.TestOfflineTools) ... INFO  18:03:14 Did not find Netty's native epoll transport in the classpath, defaulting to NIO.
+INFO  18:03:15 Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  18:03:15 New Cassandra host /127.0.0.1:9042 added
+INFO  18:03:15 New Cassandra host /127.0.0.2:9042 added
+INFO  18:03:15 New Cassandra host /127.0.0.3:9042 added
+Connected to cluster: test, max pending requests per connection 128, max connections per host 8
+Datatacenter: datacenter1; Host: /127.0.0.1; Rack: rack1
+Datatacenter: datacenter1; Host: /127.0.0.2; Rack: rack1
+Datatacenter: datacenter1; Host: /127.0.0.3; Rack: rack1
+Created keyspaces. Sleeping 1s for propagation.
+Sleeping 2s...
+Running WRITE with 200 threads for 100 iteration
+Failed to connect over JMX; not collecting these stats
+type,      total ops,    op/s,    pk/s,   row/s,    mean,     med,     .95,     .99,    .999,     max,   time,   stderr, errors,  gc: #,  max ms,  sum ms,  sdv ms,      mb
+total,           100,   18849,   18849,   18849,   339.6,   362.4,   481.6,   498.2,   498.2,   498.2,    0.0,  0.00000,      0,      0,       0,       0,       0,       0
+
+
+Results:
+op rate                   : 18849 [WRITE:18849]
+partition rate            : 18849 [WRITE:18849]
+row rate                  : 18849 [WRITE:18849]
+latency mean              : 339.6 [WRITE:339.6]
+latency median            : 362.4 [WRITE:362.4]
+latency 95th percentile   : 481.6 [WRITE:481.6]
+latency 99th percentile   : 498.2 [WRITE:498.2]
+latency 99.9th percentile : 498.2 [WRITE:498.2]
+latency max               : 498.2 [WRITE:498.2]
+Total partitions          : 100 [WRITE:100]
+Total errors              : 0 [WRITE:0]
+total gc count            : 0
+total gc mb               : 0
+total gc time (s)         : 0
+avg gc time(ms)           : NaN
+stdev gc time(ms)         : 0
+Total operation time      : 00:00:00
+END
+INFO  18:03:27 Did not find Netty's native epoll transport in the classpath, defaulting to NIO.
+INFO  18:03:27 Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  18:03:27 New Cassandra host /127.0.0.1:9042 added
+INFO  18:03:27 New Cassandra host /127.0.0.2:9042 added
+INFO  18:03:27 New Cassandra host /127.0.0.3:9042 added
+Connected to cluster: test, max pending requests per connection 128, max connections per host 8
+Datatacenter: datacenter1; Host: /127.0.0.1; Rack: rack1
+Datatacenter: datacenter1; Host: /127.0.0.2; Rack: rack1
+Datatacenter: datacenter1; Host: /127.0.0.3; Rack: rack1
+Created keyspaces. Sleeping 1s for propagation.
+Sleeping 2s...
+Warming up WRITE with 50000 iterations...
+Failed to connect over JMX; not collecting these stats
+Running WRITE with 200 threads for 100000 iteration
+Failed to connect over JMX; not collecting these stats
+type,      total ops,    op/s,    pk/s,   row/s,    mean,     med,     .95,     .99,    .999,     max,   time,   stderr, errors,  gc: #,  max ms,  sum ms,  sdv ms,      mb
+total,          1576,    1576,    1576,    1576,   107.0,    51.7,   411.2,   697.4,   884.0,   904.5,    1.0,  0.00000,      0,      0,       0,       0,       0,       0
+total,          4481,    1319,    1319,    1319,   151.2,    34.7,   752.6,  1193.6,  1555.8,  1718.6,    3.2,  0.06278,      0,      0,       0,       0,       0,       0
+total,          7840,    1310,    1310,    1310,   152.5,    31.0,   718.6,  1312.5,  1929.1,  2112.6,    5.8,  0.05079,      0,      0,       0,       0,       0,       0
+total,         10734,    1098,    1098,    1098,   166.3,    24.5,   813.9,  1386.1,  2091.0,  2097.9,    8.4,  0.06395,      0,      0,       0,       0,       0,       0
+total,         13247,    1065,    1065,    1065,   187.5,     6.3,   932.5,  1294.8,  1567.4,  1655.8,   10.8,  0.06463,      0,      0,       0,       0,       0,       0
+total,         14704,    1234,    1234,    1234,   196.3,    19.7,  1027.7,  1399.2,  1562.8,  1586.4,   11.9,  0.05435,      0,      0,       0,       0,       0,       0
+total,         15812,     542,     542,     542,   356.4,    58.1,  1412.0,  1542.4,  1591.7,  1610.0,   14.0,  0.05650,      0,      0,       0,       0,       0,       0
+total,         19678,    1147,    1147,    1147,   169.5,    11.5,   941.9,  1508.6,  2588.7,  2750.6,   17.4,  0.05045,      0,      0,       0,       0,       0,       0
+total,         23882,    1425,    1425,    1425,   146.0,    25.3,   692.6,  1275.3,  2065.1,  2435.2,   20.3,  0.04737,      0,      0,       0,       0,       0,       0
+total,         28141,    1363,    1363,    1363,   154.9,    30.4,   727.5,  1189.2,  1890.1,  2318.2,   23.4,  0.04323,      0,      0,       0,       0,       0,       0
+total,         30716,    1094,    1094,    1094,   171.3,    84.7,   645.3,   943.1,  1359.4,  1385.9,   25.8,  0.04128,      0,      0,       0,       0,       0,       0
+total,         33180,     913,     913,     913,   207.3,    70.9,   978.2,  1308.1,  1707.9,  2056.8,   28.5,  0.04424,      0,      0,       0,       0,       0,       0
+total,         37310,    1443,    1443,    1443,   136.8,    37.0,   658.1,  1377.0,  2185.8,  2576.5,   31.3,  0.04259,      0,      0,       0,       0,       0,       0
+total,         40866,    1581,    1581,    1581,   133.6,    25.8,   705.7,  1396.8,  2336.0,  2443.0,   33.6,  0.04330,      0,      0,       0,       0,       0,       0
+total,         42102,    1545,    1545,    1545,   141.6,    41.7,   637.1,  1085.4,  1265.4,  1874.9,   34.4,  0.04243,      0,      0,       0,       0,       0,       0
+total,         44245,     797,     797,     797,   253.8,    25.2,  1296.7,  1893.0,  2071.5,  2076.8,   37.1,  0.04024,      0,      0,       0,       0,       0,       0
+total,         49776,    1392,    1392,    1392,   142.3,    21.1,   722.0,  1279.5,  2019.5,  3039.7,   41.1,  0.03806,      0,      0,       0,       0,       0,       0
+total,         55011,    1560,    1560,    1560,   128.9,    32.1,   628.3,  1160.3,  1766.9,  2444.5,   44.4,  0.03746,      0,      0,       0,       0,       0,       0
+total,         58359,    1628,    1628,    1628,   122.7,    43.1,   517.5,   726.8,   964.7,  1042.7,   46.5,  0.03741,      0,      0,       0,       0,       0,       0
+total,         60800,    1423,    1423,    1423,   136.8,    49.5,   608.4,   954.5,  1149.5,  1216.9,   48.2,  0.03564,      0,      0,       0,       0,       0,       0
+total,         64317,    1446,    1446,    1446,   135.1,    32.7,   628.6,  1171.2,  1943.3,  2574.3,   50.6,  0.03410,      0,      0,       0,       0,       0,       0
+total,         67259,    1563,    1563,    1563,   138.4,    52.1,   557.8,   945.4,  1789.5,  2124.8,   52.5,  0.03328,      0,      0,       0,       0,       0,       0
+total,         69540,     901,     901,     901,   187.8,    24.4,   993.8,  1305.8,  1638.4,  1820.2,   55.0,  0.03517,      0,      0,       0,       0,       0,       0
+total,         74317,    1477,    1477,    1477,   153.7,    45.8,   851.9,  1363.6,  2025.1,  2304.4,   58.3,  0.03391,      0,      0,       0,       0,       0,       0
+total,         77910,    1765,    1765,    1765,   103.2,    39.2,   397.6,   665.4,  1085.0,  1267.4,   60.3,  0.03468,      0,      0,       0,       0,       0,       0
+total,         80540,    1665,    1665,    1665,   116.1,    40.0,   579.6,   860.0,  1200.0,  1367.0,   61.9,  0.03428,      0,      0,       0,       0,       0,       0
+total,         83573,    1708,    1708,    1708,   113.8,    40.9,   523.0,  1182.4,  1535.2,  1738.0,   63.7,  0.03405,      0,      0,       0,       0,       0,       0
+total,         87522,    1567,    1567,    1567,   133.7,    22.2,   710.6,  1314.6,  1929.8,  1953.2,   66.2,  0.03307,      0,      0,       0,       0,       0,       0
+total,         91156,    1565,    1565,    1565,   133.0,    34.7,   634.2,  1149.2,  1609.4,  1912.1,   68.5,  0.03214,      0,      0,       0,       0,       0,       0
+total,         93364,     977,     977,     977,   199.0,    42.0,   973.6,  1112.1,  1381.2,  1563.3,   70.8,  0.03281,      0,      0,       0,       0,       0,       0
+total,         97998,    1660,    1660,    1660,   124.1,    17.5,   628.0,  1250.5,  1947.9,  2364.7,   73.6,  0.03227,      0,      0,       0,       0,       0,       0
+total,        100000,    1221,    1221,    1221,   172.5,    31.1,   999.0,  1294.3,  1602.8,  2059.6,   75.2,  0.03156,      0,      0,       0,       0,       0,       0
+
+
+Results:
+op rate                   : 1330 [WRITE:1330]
+partition rate            : 1330 [WRITE:1330]
+row rate                  : 1330 [WRITE:1330]
+latency mean              : 150.4 [WRITE:150.4]
+latency median            : 32.8 [WRITE:32.8]
+latency 95th percentile   : 751.3 [WRITE:751.3]
+latency 99th percentile   : 1256.5 [WRITE:1256.5]
+latency 99.9th percentile : 1940.8 [WRITE:1940.8]
+latency max               : 3039.7 [WRITE:3039.7]
+Total partitions          : 100000 [WRITE:100000]
+Total errors              : 0 [WRITE:0]
+total gc count            : 0
+total gc mb               : 0
+total gc time (s)         : 0
+avg gc time(ms)           : NaN
+stdev gc time(ms)         : 0
+Total operation time      : 00:01:15
+END
+INFO  18:05:49 Did not find Netty's native epoll transport in the classpath, defaulting to NIO.
+INFO  18:05:49 Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  18:05:49 New Cassandra host /127.0.0.1:9042 added
+INFO  18:05:49 New Cassandra host /127.0.0.2:9042 added
+INFO  18:05:49 New Cassandra host /127.0.0.3:9042 added
+Connected to cluster: test, max pending requests per connection 128, max connections per host 8
+Datatacenter: datacenter1; Host: /127.0.0.1; Rack: rack1
+Datatacenter: datacenter1; Host: /127.0.0.2; Rack: rack1
+Datatacenter: datacenter1; Host: /127.0.0.3; Rack: rack1
+Created keyspaces. Sleeping 1s for propagation.
+Sleeping 2s...
+Warming up WRITE with 50000 iterations...
+Failed to connect over JMX; not collecting these stats
+Running WRITE with 200 threads for 100000 iteration
+Failed to connect over JMX; not collecting these stats
+type,      total ops,    op/s,    pk/s,   row/s,    mean,     med,     .95,     .99,    .999,     max,   time,   stderr, errors,  gc: #,  max ms,  sum ms,  sdv ms,      mb
+total,          1994,    1995,    1995,    1995,    82.9,    25.0,   368.6,   662.2,   889.3,  1065.4,    1.0,  0.00000,      0,      0,       0,       0,       0,       0
+total,          5399,    1698,    1698,    1698,   115.2,    24.3,   624.6,   985.4,  1410.8,  1694.9,    3.0,  0.05682,      0,      0,       0,       0,       0,       0
+total,          7780,    1658,    1658,    1658,   129.3,    48.7,   547.5,   893.8,  1530.4,  1633.1,    4.4,  0.04870,      0,      0,       0,       0,       0,       0
+total,          9671,     887,     887,     887,   203.7,    17.2,   951.7,  1110.2,  1274.9,  1323.4,    6.6,  0.13136,      0,      0,       0,       0,       0,       0
+total,         14069,    1846,    1846,    1846,   114.0,    36.1,   467.3,  1281.3,  1828.8,  2261.7,    9.0,  0.10620,      0,      0,       0,       0,       0,       0
+total,         17303,    1704,    1704,    1704,   123.2,    30.2,   630.2,   965.0,  1502.3,  1712.1,   10.9,  0.08809,      0,      0,       0,       0,       0,       0
+total,         20135,    1765,    1765,    1765,   104.5,    34.5,   429.8,   718.6,  1352.6,  1907.8,   12.5,  0.07540,      0,      0,       0,       0,       0,       0
+total,         23955,    1563,    1563,    1563,   129.9,    15.9,   749.5,  1079.1,  1588.7,  2184.5,   14.9,  0.06670,      0,      0,       0,       0,       0,       0
+total,         27221,    1412,    1412,    1412,   125.6,    35.8,   611.0,   967.9,  1352.9,  1426.3,   17.2,  0.06199,      0,      0,       0,       0,       0,       0
+total,         29474,    1169,    1169,    1169,   180.4,    17.7,   961.3,  1405.4,  1583.1,  1643.7,   19.1,  0.06336,      0,      0,       0,       0,       0,       0
+total,         33959,    1809,    1809,    1809,   116.5,    30.9,   512.8,  1192.4,  1829.9,  2548.7,   21.6,  0.05829,      0,      0,       0,       0,       0,       0
+total,         38778,    1475,    1475,    1475,   140.2,    26.7,   677.4,  1574.7,  2519.1,  2800.7,   24.9,  0.05408,      0,      0,       0,       0,       0,       0
+total,         41549,    1835,    1835,    1835,   104.3,    44.0,   418.3,   712.4,  1106.0,  1151.5,   26.4,  0.05068,      0,      0,       0,       0,       0,       0
+total,         46567,    1791,    1791,    1791,   114.3,    26.6,   523.2,  1077.0,  1788.3,  2191.8,   29.2,  0.04736,      0,      0,       0,       0,       0,       0
+total,         50256,    1810,    1810,    1810,   109.7,    40.5,   496.5,   747.1,   935.3,  1249.7,   31.2,  0.04453,      0,      0,       0,       0,       0,       0
+total,         54028,    1769,    1769,    1769,   117.4,    32.8,   526.0,  1029.8,  1360.1,  1871.9,   33.4,  0.04185,      0,      0,       0,       0,       0,       0
+total,         56156,    1236,    1236,    1236,   152.5,    41.5,   670.7,   889.9,  1148.4,  1256.9,   35.1,  0.04240,      0,      0,       0,       0,       0,       0
+total,         60166,    1670,    1670,    1670,   115.1,    30.3,   555.7,   975.1,  1480.6,  2560.6,   37.5,  0.04001,      0,      0,       0,       0,       0,       0
+total,         69061,    1505,    1505,    1505,   132.4,    44.6,   547.0,  1057.6,  6549.8,  6631.1,   43.4,  0.03821,      0,      0,       0,       0,       0,       0
+total,         72986,    1635,    1635,    1635,   130.2,    54.3,   514.2,  1070.3,  1453.2,  1607.7,   45.8,  0.03628,      0,      0,       0,       0,       0,       0
+total,         75825,    1581,    1581,    1581,   118.6,    40.5,   507.2,   893.3,  1100.2,  1257.1,   47.6,  0.03459,      0,      0,       0,       0,       0,       0
+total,         78947,    1695,    1695,    1695,   127.9,    39.9,   596.5,   943.4,  1369.2,  1413.7,   49.4,  0.03302,      0,      0,       0,       0,       0,       0
+total,         81415,    1001,    1001,    1001,   164.3,    22.8,   968.8,  1324.2,  1490.8,  1529.4,   51.9,  0.03607,      0,      0,       0,       0,       0,       0
+total,         84373,    1331,    1331,    1331,   157.1,    23.9,   885.2,  1499.4,  1898.9,  2230.2,   54.1,  0.03543,      0,      0,       0,       0,       0,       0
+total,         87438,    1776,    1776,    1776,   132.8,    42.5,   637.2,  1434.6,  1567.7,  1676.2,   55.9,  0.03420,      0,      0,       0,       0,       0,       0
+total,         91412,    1723,    1723,    1723,   118.3,    50.0,   497.0,   784.6,  1416.4,  1604.2,   58.2,  0.03294,      0,      0,       0,       0,       0,       0
+total,         95075,    1650,    1650,    1650,   120.8,    44.9,   461.8,   720.8,   975.0,  1300.1,   60.4,  0.03171,      0,      0,       0,       0,       0,       0
+total,         98988,    1718,    1718,    1718,   115.6,    44.8,   506.7,   929.6,  1352.5,  1422.4,   62.7,  0.03061,      0,      0,       0,       0,       0,       0
+total,        100000,    1309,    1309,    1309,   156.7,    79.2,   636.7,   746.4,   814.7,   817.4,   63.4,  0.03037,      0,      0,       0,       0,       0,       0
+
+
+Results:
+op rate                   : 1577 [WRITE:1577]
+partition rate            : 1577 [WRITE:1577]
+row rate                  : 1577 [WRITE:1577]
+latency mean              : 126.8 [WRITE:126.8]
+latency median            : 34.3 [WRITE:34.3]
+latency 95th percentile   : 548.2 [WRITE:548.2]
+latency 99th percentile   : 991.7 [WRITE:991.7]
+latency 99.9th percentile : 1538.6 [WRITE:1538.6]
+latency max               : 6631.1 [WRITE:6631.1]
+Total partitions          : 100000 [WRITE:100000]
+Total errors              : 0 [WRITE:0]
+total gc count            : 0
+total gc mb               : 0
+total gc time (s)         : 0
+avg gc time(ms)           : NaN
+stdev gc time(ms)         : 0
+Total operation time      : 00:01:03
+END
+ok
+test_simple_strategy_users (consistency_test.TestAccuracy) ... ok
+test_network_topology_strategy_counters (consistency_test.TestAccuracy) ... ok
+short_read_delete_test (consistency_test.TestConsistency) ... Using jna.jar in CASSANDRA_DIR/lib..
+cluster ccm directory: /mnt/tmp/dtest-ZyI38k
+True
+True
+/mnt/tmp/dtest-ZyI38k/test/node1/data/keyspace1/standard1-caca1d809d0c11e589a6635920c31a37/ma-1-big-Data.db
+True
+True
+/mnt/tmp/dtest-ZyI38k/test/node1/data/keyspace1/standard1-caca1d809d0c11e589a6635920c31a37/ma-3-big-Data.db
+True
+True
+/mnt/tmp/dtest-ZyI38k/test/node1/data/keyspace1/standard1-caca1d809d0c11e589a6635920c31a37/ma-7-big-Data.db
+True
+True
+/mnt/tmp/dtest-ZyI38k/test/node1/data/keyspace1/standard1-caca1d809d0c11e589a6635920c31a37/ma-5-big-Data.db
+True
+True
+/mnt/tmp/dtest-ZyI38k/test/node1/data/keyspace1/standard1-caca1d809d0c11e589a6635920c31a37/ma-2-big-Data.db
+True
+True
+/mnt/tmp/dtest-ZyI38k/test/node1/data/keyspace1/standard1-caca1d809d0c11e589a6635920c31a37/ma-4-big-Data.db
+removing ccm cluster test at: /mnt/tmp/dtest-ZyI38k
+clearing ssl stores from [/mnt/tmp/dtest-ZyI38k] directory
+cluster ccm directory: /mnt/tmp/dtest-trgBAW
+Testing single dc, users
+attempting connection to 127.0.0.1
+connected successfully.
+attempting connection to 127.0.0.2
+connected successfully.
+attempting connection to 127.0.0.3
+connected successfully.
+attempting connection to 127.0.0.4
+connected successfully.
+attempting connection to 127.0.0.5
+connected successfully.
+Testing accuracy for ALL/ALL/- (keys : 0 to 50)
+Testing accuracy for QUORUM/QUORUM/- (keys : 50 to 100)
+Testing accuracy for ALL/ONE/- (keys : 100 to 150)
+Testing accuracy for ONE/ALL/- (keys : 150 to 200)
+Testing accuracy for QUORUM/ONE/- (keys : 200 to 250)
+Testing accuracy for ONE/QUORUM/- (keys : 250 to 300)
+Testing accuracy for TWO/TWO/- (keys : 300 to 350)
+Testing accuracy for ONE/THREE/- (keys : 350 to 400)
+Waiting for workers to complete
+Testing accuracy for THREE/ONE/- (keys : 400 to 450)
+Testing accuracy for ANY/ONE/- (keys : 450 to 500)
+Testing accuracy for ONE/ONE/- (keys : 500 to 550)
+Testing accuracy for ONE/TWO/- (keys : 550 to 600)
+Testing accuracy for TWO/ONE/- (keys : 600 to 650)
+Testing accuracy for EACH_QUORUM/LOCAL_QUORUM/- (keys : 650 to 700)
+Testing accuracy for LOCAL_QUORUM/LOCAL_QUORUM/- (keys : 700 to 750)
+Testing accuracy for QUORUM/SERIAL/SERIAL (keys : 750 to 800)
+Testing accuracy for QUORUM/LOCAL_SERIAL/SERIAL (keys : 800 to 850)
+removing ccm cluster test at: /mnt/tmp/dtest-trgBAW
+clearing ssl stores from [/mnt/tmp/dtest-trgBAW] directory
+cluster ccm directory: /mnt/tmp/dtest-WoDcC8
+Testing multiple dcs, counters
+attempting connection to 127.0.0.1
+connected successfully.
+attempting connection to 127.0.0.2
+connected successfully.
+attempting connection to 127.0.0.3
+connected successfully.
+attempting connection to 127.0.0.4
+connected successfully.
+attempting connection to 127.0.0.5
+connected successfully.
+attempting connection to 127.0.0.6
+connected successfully.
+Testing accuracy for ALL/ALL/- (keys : 0 to 50)
+Testing accuracy for QUORUM/QUORUM/- (keys : 50 to 100)
+Testing accuracy for EACH_QUORUM/LOCAL_QUORUM/- (keys : 100 to 150)
+Testing accuracy for LOCAL_QUORUM/LOCAL_QUORUM/- (keys : 150 to 200)
+Testing accuracy for ALL/ONE/- (keys : 200 to 250)
+Testing accuracy for ONE/ALL/- (keys : 250 to 300)
+Testing accuracy for QUORUM/ONE/- (keys : 300 to 350)
+Waiting for workers to complete
+Testing accuracy for ONE/QUORUM/- (keys : 350 to 400)
+Testing accuracy for LOCAL_QUORUM/ONE/- (keys : 400 to 450)
+Testing accuracy for ONE/LOCAL_QUORUM/- (keys : 450 to 500)
+Testing accuracy for EACH_QUORUM/ONE/- (keys : 500 to 550)
+Testing accuracy for TWO/TWO/- (keys : 550 to 600)
+Testing accuracy for ONE/THREE/- (keys : 600 to 650)
+Testing accuracy for THREE/ONE/- (keys : 650 to 700)
+Testing accuracy for ONE/ONE/- (keys : 700 to 750)
+Testing accuracy for ONE/TWO/- (keys : 750 to 800)
+Testing accuracy for TWO/ONE/- (keys : 800 to 850)
+removing ccm cluster test at: /mnt/tmp/dtest-WoDcC8
+clearing ssl stores from [/mnt/tmp/dtest-WoDcC8] directory
+cluster ccm directory: /mnt/tmp/dtest-wpuJZS
+attempting connection to 127.0.0.1
+connected successfully.
+attempting connection to 127.0.0.2
+connected successfully.
+attempting connection to 127.0.0.1
+connected successfully.
+removing cok
+empty_vs_gcable_sequential_repair_test (repair_test.TestRepair) ... ok
+test_archive_commitlog_with_active_commitlog (snapshot_test.TestArchiveCommitlog) ... cm cluster test at: /mnt/tmp/dtest-wpuJZS
+clearing ssl stores from [/mnt/tmp/dtest-wpuJZS] directory
+cluster ccm directory: /mnt/tmp/dtest-l4v66g
+attempting connection to 127.0.0.1
+connected successfully.
+removing ccm cluster test at: /mnt/tmp/dtest-l4v66g
+clearing ssl stores from [/mnt/tmp/dtest-l4v66g] directory
+cluster ccm directory: /mnt/tmp/dtest-7ljYmG
+tmp_commitlog: /mnt/tmp/tmpJAOFFp
+attempting connection to 127.0.0.1
+cassandra PID: 23981
+/usr/lib/jvm/jdk1.8.0_45/bin/jstack stdout:
+2015-12-07 18:16:50
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (25.45-b02 mixed mode):
+
+"DestroyJavaVM" #74 prio=5 os_prio=0 tid=0x00007f2ce83fa8c0 nid=0x5dae waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Attach Listener" #73 daemon prio=9 os_prio=0 tid=0x00007f2ce8c7ddc0 nid=0x5e05 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"epollEventLoopGroup-2-1" #64 prio=10 os_prio=0 tid=0x00007f2ce8c7ef90 nid=0x5e04 runnable [0x00007f2ccafdb000]
+   java.lang.Thread.State: RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:194)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:219)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"process reaper" #63 daemon prio=10 os_prio=0 tid=0x00007f2ce8c2a7f0 nid=0x5df9 waiting on condition [0x00007f2ccb41b000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e1b02058> (a java.util.concurrent.SynchronousQueue$TransferStack)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+	at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:941)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"PendingRangeCalculator:1" #62 daemon prio=5 os_prio=0 tid=0x00007f2ce8bf9750 nid=0x5def waiting on condition [0x00007f2ccb462000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e3d7f328> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ReadRepairStage:4" #61 daemon prio=5 os_prio=0 tid=0x00007f2ce8bf1c10 nid=0x5dee waiting on condition [0x00007f2ccb4a5000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e3980078> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ReadRepairStage:3" #60 daemon prio=5 os_prio=0 tid=0x00007f2ce8bf0890 nid=0x5ded waiting on condition [0x00007f2ccb4e6000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e3980078> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ReadRepairStage:2" #59 daemon prio=5 os_prio=0 tid=0x00007f2ce8bef540 nid=0x5dec waiting on condition [0x00007f2ccb527000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e3980078> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ReadRepairStage:1" #58 daemon prio=5 os_prio=0 tid=0x00007f2ce8bedf10 nid=0x5deb waiting on condition [0x00007f2ccb568000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e3980078> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"MiscStage:1" #57 daemon prio=5 os_prio=0 tid=0x00007f2ce8bec800 nid=0x5dea waiting on condition [0x00007f2ccb5a9000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e3980850> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"MigrationStage:1" #56 daemon prio=5 os_prio=0 tid=0x00007f2ce8beb0f0 nid=0x5de9 waiting on condition [0x00007f2ccb5ea000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e391c058> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"AntiEntropyStage:1" #55 daemon prio=5 os_prio=0 tid=0x00007f2ce8be9c50 nid=0x5de8 waiting on condition [0x00007f2ccb62b000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e391c668> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"GossipStage:1" #54 daemon prio=5 os_prio=0 tid=0x00007f2ce8be8620 nid=0x5de7 waiting on condition [0x00007f2ccb66c000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e391cd30> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"InternalResponseStage:4" #53 daemon prio=5 os_prio=0 tid=0x00007f2ce8be6ed0 nid=0x5de6 waiting on condition [0x00007f2ccb6ad000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e391a138> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"InternalResponseStage:3" #52 daemon prio=5 os_prio=0 tid=0x00007f2ce8be5b70 nid=0x5de5 waiting on condition [0x00007f2ccb6ee000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e391a138> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"InternalResponseStage:2" #51 daemon prio=5 os_prio=0 tid=0x00007f2ce8be4880 nid=0x5de4 waiting on condition [0x00007f2ccb72f000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e391a138> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"InternalResponseStage:1" #50 daemon prio=5 os_prio=0 tid=0x00007f2ce8be2ef0 nid=0x5de3 waiting on condition [0x00007f2ccb770000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e391a138> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"LocalPool-Cleaner:1" #49 daemon prio=5 os_prio=0 tid=0x00007f2ce8acce90 nid=0x5de2 in Object.wait() [0x00007f2ccb9b1000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x00000000e3921508> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at org.apache.cassandra.utils.memory.BufferPool$2.run(BufferPool.java:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- <0x00000000e3921198> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"BatchlogTasks:1" #47 daemon prio=5 os_prio=0 tid=0x00007f2ce8ac8b50 nid=0x5de0 waiting on condition [0x00007f2ccb9f2000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e390ec08> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ACCEPT-/127.0.0.1" #46 prio=5 os_prio=0 tid=0x00007f2ce8ac3eb0 nid=0x5ddf runnable [0x00007f2ccba33000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.ServerSocketChannelImpl.accept0(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:422)
+	at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:250)
+	- locked <0x00000000e399b348> (a java.lang.Object)
+	at sun.nio.ch.ServerSocketAdaptor.accept(ServerSocketAdaptor.java:100)
+	- locked <0x00000000e399b318> (a java.lang.Object)
+	at org.apache.cassandra.net.MessagingService$SocketThread.run(MessagingService.java:1014)
+
+   Locked ownable synchronizers:
+	- None
+
+"GossipTasks:1" #45 daemon prio=5 os_prio=0 tid=0x00007f2ce8ab77f0 nid=0x5dde waiting on condition [0x00007f2ccba74000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e4c99108> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"Reference-Reaper:1" #44 daemon prio=5 os_prio=0 tid=0x00007f2cd4574030 nid=0x5ddd in Object.wait() [0x00007f2ccbab5000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x00000000e39813f8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at org.apache.cassandra.utils.concurrent.Ref$ReferenceReaper.run(Ref.java:339)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- <0x00000000e3935ad0> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"IndexSummaryManager:1" #42 daemon prio=1 os_prio=4 tid=0x00007f2ce8abdb30 nid=0x5ddc waiting on condition [0x00007f2ccbaf6000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e3949b10> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"HintsDispatcher:1" #41 daemon prio=1 os_prio=4 tid=0x00007f2ce8aa2ca0 nid=0x5ddb waiting on condition [0x00007f2ccbb37000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e3905b08> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"CacheCleanupExecutor:1" #40 daemon prio=1 os_prio=4 tid=0x00007f2ce8a39cc0 nid=0x5dda waiting on condition [0x00007f2ccbd78000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e3e7ead0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ValidationExecutor:1" #39 daemon prio=1 os_prio=4 tid=0x00007f2ce8a2ee20 nid=0x5dd9 waiting on condition [0x00007f2ccbdb9000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5b13428> (a java.util.concurrent.SynchronousQueue$TransferStack)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+	at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:941)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"CompactionExecutor:2" #38 daemon prio=1 os_prio=4 tid=0x00007f2ce8a37450 nid=0x5dd8 waiting on condition [0x00007f2ccbf3b000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5b13518> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"CompactionExecutor:1" #37 daemon prio=1 os_prio=4 tid=0x00007f2ce8a36b80 nid=0x5dd7 waiting on condition [0x00007f2ccbefa000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5b13518> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI Scheduler(0)" #34 daemon prio=5 os_prio=0 tid=0x00007f2ce89ebfa0 nid=0x5dd4 waiting on condition [0x00007f2ccbf7c000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5b01b20> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Connection(2)-127.0.0.1" #33 daemon prio=5 os_prio=0 tid=0x00007f2ccc06ca50 nid=0x5dd3 runnable [0x00007f2ccbfbc000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	- locked <0x00000000e5a711c0> (a java.io.BufferedInputStream)
+	at java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:550)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$241(TCPTransport.java:683)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$47/1040428378.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- <0x00000000e5ae7480> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"RMI RenewClean-[127.0.0.1:39652]" #32 daemon prio=5 os_prio=0 tid=0x0000000001256740 nid=0x5dd2 in Object.wait() [0x00007f2ccbffe000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x00000000e5b020f0> (a java.lang.ref.ReferenceQueue$Lock)
+	at sun.rmi.transport.DGCClient$EndpointEntry$RenewCleanThread.run(DGCClient.java:536)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Connection(1)-127.0.0.1" #31 daemon prio=5 os_prio=0 tid=0x00007f2ce89e4c50 nid=0x5dd1 runnable [0x00007f2cd005a000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	- locked <0x00000000e5a71378> (a java.io.BufferedInputStream)
+	at java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:550)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$241(TCPTransport.java:683)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$47/1040428378.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- <0x00000000e5ae74e0> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"GC Daemon" #30 daemon prio=2 os_prio=3 tid=0x00007f2ce89d1910 nid=0x5dd0 in Object.wait() [0x00007f2cd009c000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at sun.misc.GC$Daemon.run(GC.java:117)
+	- locked <0x00000000e5b023f0> (a sun.misc.GC$LatencyLock)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI Reaper" #29 prio=5 os_prio=0 tid=0x00007f2ce89d0320 nid=0x5dcf in Object.wait() [0x00007f2cd00dd000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x00000000e5b02450> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at sun.rmi.transport.ObjectTable$Reaper.run(ObjectTable.java:351)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Accept-0" #28 daemon prio=5 os_prio=0 tid=0x00007f2ce89cefa0 nid=0x5dce runnable [0x00007f2cd011e000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:404)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:400)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:372)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Accept-7100" #27 daemon prio=5 os_prio=0 tid=0x00007f2ce89cba20 nid=0x5dcd runnable [0x00007f2cd07a4000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:404)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:400)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:372)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"OptionalTasks:1" #26 daemon prio=5 os_prio=0 tid=0x00007f2ce8968900 nid=0x5dcc waiting on condition [0x00007f2cd035f000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e3e6cf78> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"COMMIT-LOG-ALLOCATOR" #25 prio=5 os_prio=0 tid=0x00007f2ce894cae0 nid=0x5dcb waiting on condition [0x00007f2cd04a0000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e4c94b90> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at org.apache.cassandra.db.commitlog.CommitLogSegmentManager$1.runMayThrow(CommitLogSegmentManager.java:146)
+	at org.apache.cassandra.utils.WrappedRunnable.run(WrappedRunnable.java:28)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"PERIODIC-COMMIT-LOG-SYNCER" #24 prio=5 os_prio=0 tid=0x00007f2ce894b780 nid=0x5dca waiting on condition [0x00007f2cd04e1000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e4b7d870> (a java.util.concurrent.Semaphore$NonfairSync)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1037)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1328)
+	at java.util.concurrent.Semaphore.tryAcquire(Semaphore.java:409)
+	at org.apache.cassandra.db.commitlog.AbstractCommitLogService$1.run(AbstractCommitLogService.java:134)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"CommitLogArchiver:1" #23 daemon prio=5 os_prio=0 tid=0x00007f2ce89490e0 nid=0x5dc9 waiting on condition [0x00007f2cd0522000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e4c95130> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"SlabPoolCleaner" #22 daemon prio=5 os_prio=0 tid=0x00007f2ce8931b20 nid=0x5dc8 waiting on condition [0x00007f2cd0763000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+	at org.apache.cassandra.utils.concurrent.WaitQueue$AbstractSignal.awaitUninterruptibly(WaitQueue.java:279)
+	at org.apache.cassandra.utils.memory.MemtableCleanerThread.run(MemtableCleanerThread.java:66)
+
+   Locked ownable synchronizers:
+	- None
+
+"SecondaryIndexManagement:1" #20 daemon prio=5 os_prio=0 tid=0x00007f2ce8922650 nid=0x5dc6 waiting on condition [0x00007f2cd07e5000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e42e1548> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"MemtableReclaimMemory:1" #19 daemon prio=5 os_prio=0 tid=0x00007f2ce88ef770 nid=0x5dc5 waiting on condition [0x00007f2cd0826000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e4293b98> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"MemtablePostFlush:1" #18 daemon prio=5 os_prio=0 tid=0x00007f2ce88ee400 nid=0x5dc4 waiting on condition [0x00007f2cd0867000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e46bcbf8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"MemtableFlushWriter:2" #17 daemon prio=5 os_prio=0 tid=0x00007f2ce88ec540 nid=0x5dc3 waiting on condition [0x00007f2cd08a8000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e46bcc40> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"MemtableFlushWriter:1" #16 daemon prio=5 os_prio=0 tid=0x00007f2ce88eab90 nid=0x5dc2 waiting on condition [0x00007f2cd08e9000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e46bcc40> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"Background_Reporter:1" #15 daemon prio=5 os_prio=0 tid=0x00007f2ce87da1a0 nid=0x5dc1 waiting on condition [0x00007f2cd0d37000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e4126e20> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"EXPIRING-MAP-REAPER:1" #14 daemon prio=5 os_prio=0 tid=0x00007f2ce87d35d0 nid=0x5dc0 waiting on condition [0x00007f2cd0d78000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e4126c88> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ScheduledTasks:1" #13 daemon prio=5 os_prio=0 tid=0x00007f2ce86a0e50 nid=0x5dbf runnable [0x00007f2cd805a000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e409c230> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"AsyncAppender-Worker-ASYNCDEBUGLOG" #12 daemon prio=5 os_prio=0 tid=0x00007f2ce84cd2e0 nid=0x5dbe waiting on condition [0x00007f2cd809b000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e3e217f8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+	at ch.qos.logback.core.AsyncAppenderBase$Worker.run(AsyncAppenderBase.java:250)
+
+   Locked ownable synchronizers:
+	- None
+
+"Service Thread" #9 daemon prio=9 os_prio=0 tid=0x00007f2ce8241dc0 nid=0x5dbc runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C1 CompilerThread2" #8 daemon prio=9 os_prio=0 tid=0x00007f2ce82372f0 nid=0x5dbb waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread1" #7 daemon prio=9 os_prio=0 tid=0x00007f2ce8235880 nid=0x5dba runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread0" #6 daemon prio=9 os_prio=0 tid=0x00007f2ce822ed00 nid=0x5db9 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Signal Dispatcher" #5 daemon prio=9 os_prio=0 tid=0x00007f2ce813cd10 nid=0x5db8 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Surrogate Locker Thread (Concurrent GC)" #4 daemon prio=9 os_prio=0 tid=0x00007f2ce8138fa0 nid=0x5db7 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Finalizer" #3 daemon prio=8 os_prio=0 tid=0x00007f2ce8104db0 nid=0x5db6 in Object.wait() [0x00007f2cec734000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x00000000e3e32b90> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+   Locked ownable synchronizers:
+	- None
+
+"Reference Handler" #2 daemon prio=10 os_prio=0 tid=0x00007f2ce8103490 nid=0x5db5 in Object.wait() [0x00007f2cec775000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:157)
+	- locked <0x00000000e3e21840> (a java.lang.ref.Reference$Lock)
+
+   Locked ownable synchronizers:
+	- None
+
+"VM Thread" os_prio=0 tid=0x00007f2ce80fea80 nid=0x5db4 runnable 
+
+"Gang worker#0 (Parallel GC Threads)" os_prio=0 tid=0x00007f2ce801af80 nid=0x5daf runnable 
+
+"Gang worker#1 (Parallel GC Threads)" os_prio=0 tid=0x00007f2ce801c370 nid=0x5db0 runnable 
+
+"Gang worker#2 (Parallel GC Threads)" os_prio=0 tid=0x00007f2ce801d760 nid=0x5db1 runnable 
+
+"Gang worker#3 (Parallel GC Threads)" os_prio=0 tid=0x00007f2ce801eb50 nid=0x5db2 runnable 
+
+"Concurrent Mark-Sweep GC Thread" os_prio=0 tid=0x00007f2ce80610e0 nid=0x5db3 runnable 
+
+"VM Periodic Task Thread" os_prio=0 tid=0x00007f2ce8244440 nid=0x5dbd waiting on condition 
+
+JNI global references: 643
+
+
+/usr/lib/jvm/jdk1.8.0_45/bin/jstack stderr:
+
+
+/usr/lib/jvm/jdk1.8.0_45/bin/jmap stdout:
+Attaching to process ID 23981, please wait...
+Debugger attached successfully.
+Server compiler detected.
+JVM version is 25.45-b02
+
+using parallel threads in the new generation.
+using thread-local object allocation.
+Concurrent Mark-Sweep GC
+
+Heap Configuration:
+   MinHeapFreeRatio         = 40
+   MaxHeapFreeRatio         = 70
+   MaxHeapSize              = 524288000 (500.0MB)
+   NewSize                  = 52428800 (50.0MB)
+   MaxNewSize               = 52428800 (50.0MB)
+   OldSize                  = 471859200 (450.0MB)
+   NewRatio                 = 2
+   SurvivorRatio            = 8
+   MetaspaceSize            = 21807104 (20.796875MB)
+   CompressedClassSpaceSize = 1073741824 (1024.0MB)
+   MaxMetaspaceSize         = 17592186044415 MB
+   G1HeapRegionSize         = 0 (0.0MB)
+
+Heap Usage:
+New Generation (Eden + 1 Survivor Space):
+   capacity = 47185920 (45.0MB)
+   used     = 32310368 (30.813568115234375MB)
+   free     = 14875552 (14.186431884765625MB)
+   68.47459581163194% used
+Eden Space:
+   capacity = 41943040 (40.0MB)
+   used     = 27067488 (25.813568115234375MB)
+   free     = 14875552 (14.186431884765625MB)
+   64.53392028808594% used
+From Space:
+   capacity = 5242880 (5.0MB)
+   used     = 5242880 (5.0MB)
+   free     = 0 (0.0MB)
+   100.0% used
+To Space:
+   capacity = 5242880 (5.0MB)
+   used     = 0 (0.0MB)
+   free     = 5242880 (5.0MB)
+   0.0% used
+concurrent mark-sweep generation:
+   capacity = 471859200 (450.0MB)
+   used     = 5689197991924015928 (5.425642005847946E12MB)
+   free     = 12166544039018 MB
+   1.2056982235217659E12% used
+
+13747 interned Strings occupying 1897624 bytes.
+
+/usr/lib/jvm/jdk1.8.0_45/bin/jmap stderr:
+
+
+pidstat stdout:
+Linux 3.16.0-4-amd64 (ip-172-31-10-45) 	12/07/2015 	_x86_64_	(4 CPU)
+
+06:16:53 PM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
+06:16:54 PM     0         6    0.00    0.99    0.00    0.99     0  kworker/u30:0
+06:16:54 PM     0        23    0.00    0.99    0.00    0.99     3  ksoftirqd/3
+06:16:54 PM  1001     23981   12.87    0.00    0.00   12.87     3  java
+
+06:16:54 PM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
+06:16:55 PM  1001     23981    1.00    0.00    0.00    1.00     3  java
+06:16:55 PM  1001     24087    0.00    1.00    0.00    1.00     0  pidstat
+
+06:16:55 PM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
+06:16:56 PM     0         3    0.00    2.00    0.00    2.00     0  ksoftirqd/0
+06:16:56 PM  1001     23981    1.00    0.00    0.00    1.00     3  java
+
+06:16:56 PM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
+06:16:57 PM  1001     24087    0.00    1.00    0.00    1.00     0  pidstat
+
+06:16:57 PM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
+06:16:58 PM     0         3    0.00    2.00    0.00    2.00     0  ksoftirqd/0
+06:16:58 PM  1001     23981    1.00    0.00    0.00    1.00     3  java
+
+Average:      UID       PID    %usr %system  %guest    %CPU   CPU  Command
+Average:        0         3    0.00    0.80    0.00    0.80     -  ksoftirqd/0
+Average:        0         6    0.00    0.20    0.00    0.20     -  kworker/u30:0
+Average:        0        23    0.00    0.20    0.00    0.20     -  ksoftirqd/3
+Average:     1001     23981    3.19    0.00    0.00    3.19     -  java
+Average:     1001     24087    0.00    0.40    0.00    0.40     -  pidstat
+
+pidstat stderr:
+
+
+df stdout:
+Filesystem     1K-blocks    Used Available Use% Mounted on
+/dev/xvda1       8121784 2425876   5260300  32% /
+
+df stderr:
+
+
+attempting to connect to 127.0.0.1:9042 via TCP
+recieved from socket:
+printing from the socket blew up, but that's ok
+attempting connection to 127.0.0.1
+connected successfully.
+Writing first 30,000 rows...
+Making snapshot....
+Running snapshot cmd: snapshot ks -cf cf -t basic
+Making snapshot....
+Running snapshot cmd: snapshot system_schema -cf keyspaces -t keyspaces
+Making snapshot....
+Running snapshot cmd: snapshot system_schema -cf columns -t columns
+Making snapshot....
+Running snapshot cmd: snapshot system_schema -cf types -t usertypes
+Making snapshot....
+Running snapshot cmd: snapshot system_schema -cf tables -t cfs
+Writing second 30,000 rows...
+Writing final 5,000 rows...
+node1 commitlog dir: /mnt/tmp/dtest-7ljYmG/test/node1/commitlogs
+removing ccm cluster test at: /mnt/tmp/dtest-7ljYmG
+clearing ssl stores from [/mnt/tmp/dtest-7ljYmG] directory
+cluster ccm directory: /mnt/tmp/dtest-_FNtmw
+Restoring snapshot for cf ....
+snapshot_dir is : /mnt/tmp/tmp_y2rl6/keyspaces-abac5682dea631c5b535b3d6cffd0fb6/snapshots/keyspaces
+Restoring snapshot for cf ....
+snapshot_dir is : /mnt/tmp/tmpr7If8u/columns-24101c25a2ae3af787c1b40ee1aca33f/snapshots/columns
+Restoring snapshot for cf ....
+snapshot_dir is : /mnt/tmp/tmpYaVyi_/types-5a8b1ca866023f77a0459273d308917a/snapshots/usertypes
+Restoring snapshot for cf ....
+snapshot_dir is : /mnt/tmp/tmp2JSTDK/tables-afddfb9dbc1e30688056eed6c302ba09/snapshots/cfs
+Restoring snapshot for cf ....
+snapshot_dir is : /mnt/tmp/tmpvOCFVi/cf-b4b398809d0e11e59d7e635920c31a37/snapshots/basic
+attempting connection to 127.0.0.1
+connected successfully.
+Restarting node1..
+attempting connection to 127.0.0.1
+connecteok
+small_segment_size_test (commitlog_test.TestCommitLog) ... d successfully.
+removing snapshot_dir: /mnt/tmp/tmpvOCFVi
+removing snapshot_dir: /mnt/tmp/tmp_y2rl6
+removing snapshot_dir: /mnt/tmp/tmp2JSTDK
+removing snapshot_dir: /mnt/tmp/tmpYaVyi_
+removing snapshot_dir: /mnt/tmp/tmpr7If8u
+removing tmp_commitlog: /mnt/tmp/tmpJAOFFp
+removing ccm cluster test at: /mnt/tmp/dtest-_FNtmw
+clearing ssl stores from [/mnt/tmp/dtest-_FNtmw] directory
+cluster ccm directory: /mnt/tmp/dtest-oqwR2e
+attempting connection to 127.0.0.1
+cassandra PID: 25829
+/usr/lib/jvm/jdk1.8.0_45/bin/jstack stdout:
+2015-12-07 18:18:51
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (25.45-b02 mixed mode):
+
+"DestroyJavaVM" #74 prio=5 os_prio=0 tid=0x00007fd6384028e0 nid=0x64e6 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-2" #73 prio=5 os_prio=0 tid=0x00007fd638db5e20 nid=0x653d runnable [0x00007fd619e11000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:404)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at org.apache.cassandra.thrift.TCustomServerSocket.acceptImpl(TCustomServerSocket.java:103)
+	at org.apache.cassandra.thrift.TCustomServerSocket.acceptImpl(TCustomServerSocket.java:36)
+	at org.apache.thrift.transport.TServerTransport.accept(TServerTransport.java:60)
+	at org.apache.cassandra.thrift.CustomTThreadPoolServer.serve(CustomTThreadPoolServer.java:111)
+	at org.apache.cassandra.thrift.ThriftServer$ThriftServerThread.run(ThriftServer.java:137)
+
+   Locked ownable synchronizers:
+	- None
+
+"Attach Listener" #72 daemon prio=9 os_prio=0 tid=0x00007fd638d92440 nid=0x653c waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"epollEventLoopGroup-2-1" #63 prio=10 os_prio=0 tid=0x00007fd638d84f40 nid=0x653b runnable [0x00007fd619e93000]
+   java.lang.Thread.State: RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:194)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:219)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"process reaper" #62 daemon prio=10 os_prio=0 tid=0x00007fd638d2c950 nid=0x652b waiting on condition [0x00007fd619ecc000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e3441108> (a java.util.concurrent.SynchronousQueue$TransferStack)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+	at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:941)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"PendingRangeCalculator:1" #61 daemon prio=5 os_prio=0 tid=0x00007fd638cf88c0 nid=0x6526 waiting on condition [0x00007fd619f0e000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e3441348> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ReadRepairStage:4" #60 daemon prio=5 os_prio=0 tid=0x00007fd638bc84c0 nid=0x6525 waiting on condition [0x00007fd619c53000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5fb34a0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ReadRepairStage:3" #59 daemon prio=5 os_prio=0 tid=0x00007fd638bc6d50 nid=0x6524 waiting on condition [0x00007fd619c94000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5fb34a0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ReadRepairStage:2" #58 daemon prio=5 os_prio=0 tid=0x00007fd638bc55e0 nid=0x6523 waiting on condition [0x00007fd619cd5000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5fb34a0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ReadRepairStage:1" #57 daemon prio=5 os_prio=0 tid=0x00007fd638bc3e70 nid=0x6522 waiting on condition [0x00007fd619d16000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5fb34a0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"MiscStage:1" #56 daemon prio=5 os_prio=0 tid=0x00007fd638bc2730 nid=0x6521 waiting on condition [0x00007fd619d57000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5fb34e8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"MigrationStage:1" #55 daemon prio=5 os_prio=0 tid=0x00007fd638bc0d10 nid=0x6520 waiting on condition [0x00007fd619f4f000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5fb3710> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"AntiEntropyStage:1" #54 daemon prio=5 os_prio=0 tid=0x00007fd638bbf5a0 nid=0x651f waiting on condition [0x00007fd619f90000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5fb39f8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"GossipStage:1" #53 daemon prio=5 os_prio=0 tid=0x00007fd638bbe220 nid=0x651e waiting on condition [0x00007fd619fd1000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5fb3c38> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"InternalResponseStage:4" #52 daemon prio=5 os_prio=0 tid=0x00007fd638bbc850 nid=0x651d waiting on condition [0x00007fd61a012000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5fb3e78> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"InternalResponseStage:3" #51 daemon prio=5 os_prio=0 tid=0x00007fd638bbb100 nid=0x651c waiting on condition [0x00007fd61a053000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5fb3e78> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"InternalResponseStage:2" #50 daemon prio=5 os_prio=0 tid=0x00007fd638bb9e40 nid=0x651b waiting on condition [0x00007fd61a094000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5fb3e78> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"InternalResponseStage:1" #49 daemon prio=5 os_prio=0 tid=0x00007fd638bb8180 nid=0x651a waiting on condition [0x00007fd61a0d5000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5fb3e78> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"LocalPool-Cleaner:1" #48 daemon prio=5 os_prio=0 tid=0x00007fd638aa1fc0 nid=0x6519 in Object.wait() [0x00007fd61a116000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000e5fb42e0> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x00000000e5fb42e0> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at org.apache.cassandra.utils.memory.BufferPool$2.run(BufferPool.java:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- <0x00000000e600be88> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"BatchlogTasks:1" #46 daemon prio=5 os_prio=0 tid=0x00007fd638a9bce0 nid=0x6517 waiting on condition [0x00007fd61a157000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5ff3db0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ACCEPT-/127.0.0.1" #45 prio=5 os_prio=0 tid=0x00007fd638a98a80 nid=0x6516 runnable [0x00007fd61a398000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.ServerSocketChannelImpl.accept0(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:422)
+	at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:250)
+	- locked <0x00000000e5fb4400> (a java.lang.Object)
+	at sun.nio.ch.ServerSocketAdaptor.accept(ServerSocketAdaptor.java:100)
+	- locked <0x00000000e5fb43e8> (a java.lang.Object)
+	at org.apache.cassandra.net.MessagingService$SocketThread.run(MessagingService.java:1014)
+
+   Locked ownable synchronizers:
+	- None
+
+"GossipTasks:1" #44 daemon prio=5 os_prio=0 tid=0x00007fd638a61970 nid=0x6515 waiting on condition [0x00007fd61a3d9000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e47d7be0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"Reference-Reaper:1" #43 daemon prio=5 os_prio=0 tid=0x00007fd61c0d0140 nid=0x6514 in Object.wait() [0x00007fd61a41a000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000e5fb4688> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x00000000e5fb4688> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at org.apache.cassandra.utils.concurrent.Ref$ReferenceReaper.run(Ref.java:339)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- <0x00000000e600bf78> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"IndexSummaryManager:1" #41 daemon prio=1 os_prio=4 tid=0x00007fd638a59f00 nid=0x6513 waiting on condition [0x00007fd61a45b000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5fb46d0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"HintsDispatcher:1" #40 daemon prio=1 os_prio=4 tid=0x00007fd638a462e0 nid=0x6512 waiting on condition [0x00007fd61a49c000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5feecb0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"CacheCleanupExecutor:1" #39 daemon prio=1 os_prio=4 tid=0x00007fd6389d8250 nid=0x6511 waiting on condition [0x00007fd61a6dd000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e59cc9d0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ValidationExecutor:1" #38 daemon prio=1 os_prio=4 tid=0x00007fd6389d4270 nid=0x6510 waiting on condition [0x00007fd61a71e000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e59ccac0> (a java.util.concurrent.SynchronousQueue$TransferStack)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+	at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:941)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"CompactionExecutor:2" #37 daemon prio=1 os_prio=4 tid=0x00007fd6389d3830 nid=0x650f waiting on condition [0x00007fd61aca0000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e59ccb80> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"CompactionExecutor:1" #36 daemon prio=1 os_prio=4 tid=0x00007fd6389d2f60 nid=0x650e waiting on condition [0x00007fd61ac5f000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e59ccb80> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Connection(2)-127.0.0.1" #33 daemon prio=5 os_prio=0 tid=0x00007fd63897a3c0 nid=0x650b runnable [0x00007fd61ace0000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	- locked <0x00000000e3e97480> (a java.io.BufferedInputStream)
+	at java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:550)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$241(TCPTransport.java:683)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$47/649736337.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- <0x00000000e41263e0> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"RMI RenewClean-[127.0.0.1:50636]" #32 daemon prio=5 os_prio=0 tid=0x00007fd6244ec940 nid=0x650a in Object.wait() [0x00007fd61ad22000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000e5bce4c8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x00000000e5bce4c8> (a java.lang.ref.ReferenceQueue$Lock)
+	at sun.rmi.transport.DGCClient$EndpointEntry$RenewCleanThread.run(DGCClient.java:536)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI Scheduler(0)" #31 daemon prio=5 os_prio=0 tid=0x00007fd638978ed0 nid=0x6509 waiting on condition [0x00007fd61ad63000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5bce648> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Connection(1)-127.0.0.1" #30 daemon prio=5 os_prio=0 tid=0x00007fd6244e7940 nid=0x6508 runnable [0x00007fd61ada3000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	- locked <0x00000000e4758ba0> (a java.io.BufferedInputStream)
+	at java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:550)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$241(TCPTransport.java:683)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$47/649736337.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- <0x00000000e4126500> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"GC Daemon" #29 daemon prio=2 os_prio=3 tid=0x00007fd63895be80 nid=0x6507 in Object.wait() [0x00007fd61ade5000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000e5bf64d0> (a sun.misc.GC$LatencyLock)
+	at sun.misc.GC$Daemon.run(GC.java:117)
+	- locked <0x00000000e5bf64d0> (a sun.misc.GC$LatencyLock)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI Reaper" #28 prio=5 os_prio=0 tid=0x00007fd63895a890 nid=0x6506 in Object.wait() [0x00007fd61ae26000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000e5bf6110> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x00000000e5bf6110> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at sun.rmi.transport.ObjectTable$Reaper.run(ObjectTable.java:351)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Accept-0" #27 daemon prio=5 os_prio=0 tid=0x00007fd638959160 nid=0x6505 runnable [0x00007fd61ae67000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:404)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:400)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:372)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Accept-7100" #26 daemon prio=5 os_prio=0 tid=0x00007fd638958060 nid=0x6504 runnable [0x00007fd61b8ac000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:404)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:400)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:372)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"OptionalTasks:1" #25 daemon prio=5 os_prio=0 tid=0x00007fd6388fa170 nid=0x6503 waiting on condition [0x00007fd61b0a8000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e414faa8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"COMMIT-LOG-ALLOCATOR" #24 prio=5 os_prio=0 tid=0x00007fd6388e4ae0 nid=0x6502 waiting on condition [0x00007fd61b5e9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e4cff500> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at org.apache.cassandra.db.commitlog.CommitLogSegmentManager$1.runMayThrow(CommitLogSegmentManager.java:146)
+	at org.apache.cassandra.utils.WrappedRunnable.run(WrappedRunnable.java:28)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"PERIODIC-COMMIT-LOG-SYNCER" #23 prio=5 os_prio=0 tid=0x00007fd6388dbe00 nid=0x6501 waiting on condition [0x00007fd61b62a000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e4a7e678> (a java.util.concurrent.Semaphore$NonfairSync)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1037)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1328)
+	at java.util.concurrent.Semaphore.tryAcquire(Semaphore.java:409)
+	at org.apache.cassandra.db.commitlog.AbstractCommitLogService$1.run(AbstractCommitLogService.java:134)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"SlabPoolCleaner" #22 daemon prio=5 os_prio=0 tid=0x00007fd6388cb110 nid=0x6500 waiting on condition [0x00007fd61b66b000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+	at org.apache.cassandra.utils.concurrent.WaitQueue$AbstractSignal.awaitUninterruptibly(WaitQueue.java:279)
+	at org.apache.cassandra.utils.memory.MemtableCleanerThread.run(MemtableCleanerThread.java:66)
+
+   Locked ownable synchronizers:
+	- None
+
+"SecondaryIndexManagement:1" #20 daemon prio=5 os_prio=0 tid=0x00007fd6388bb2a0 nid=0x64fe waiting on condition [0x00007fd61b8ed000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e46cc958> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"MemtableReclaimMemory:1" #19 daemon prio=5 os_prio=0 tid=0x00007fd638889f00 nid=0x64fd waiting on condition [0x00007fd61b92e000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e46cc9a0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"MemtablePostFlush:1" #18 daemon prio=5 os_prio=0 tid=0x00007fd6388885f0 nid=0x64fc waiting on condition [0x00007fd61b96f000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e46cc9e8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"MemtableFlushWriter:2" #17 daemon prio=5 os_prio=0 tid=0x00007fd6388869a0 nid=0x64fb waiting on condition [0x00007fd61b9b0000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e427faf8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"MemtableFlushWriter:1" #16 daemon prio=5 os_prio=0 tid=0x00007fd6388856f0 nid=0x64fa waiting on condition [0x00007fd61b9f1000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e427faf8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"Background_Reporter:1" #15 daemon prio=5 os_prio=0 tid=0x00007fd624465a90 nid=0x64f9 waiting on condition [0x00007fd620076000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e40a0ab0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"EXPIRING-MAP-REAPER:1" #14 daemon prio=5 os_prio=0 tid=0x00007fd6244596e0 nid=0x64f8 waiting on condition [0x00007fd6200b7000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e4133fa8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ScheduledTasks:1" #13 daemon prio=5 os_prio=0 tid=0x00007fd638672390 nid=0x64f7 waiting on condition [0x00007fd620548000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e3eeaed8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"AsyncAppender-Worker-ASYNCDEBUGLOG" #12 daemon prio=5 os_prio=0 tid=0x00007fd6384e6750 nid=0x64f6 waiting on condition [0x00007fd620989000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e3e21678> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+	at ch.qos.logback.core.AsyncAppenderBase$Worker.run(AsyncAppenderBase.java:250)
+
+   Locked ownable synchronizers:
+	- None
+
+"Service Thread" #9 daemon prio=9 os_prio=0 tid=0x00007fd638241ea0 nid=0x64f4 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C1 CompilerThread2" #8 daemon prio=9 os_prio=0 tid=0x00007fd6382373d0 nid=0x64f3 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread1" #7 daemon prio=9 os_prio=0 tid=0x00007fd638235960 nid=0x64f2 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread0" #6 daemon prio=9 os_prio=0 tid=0x00007fd63822ede0 nid=0x64f1 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Signal Dispatcher" #5 daemon prio=9 os_prio=0 tid=0x00007fd63813cda0 nid=0x64f0 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Surrogate Locker Thread (Concurrent GC)" #4 daemon prio=9 os_prio=0 tid=0x00007fd638139100 nid=0x64ef waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Finalizer" #3 daemon prio=8 os_prio=0 tid=0x00007fd638104db0 nid=0x64ee in Object.wait() [0x00007fd62885c000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000e3e32e40> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x00000000e3e32e40> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+   Locked ownable synchronizers:
+	- None
+
+"Reference Handler" #2 daemon prio=10 os_prio=0 tid=0x00007fd638103490 nid=0x64ed in Object.wait() [0x00007fd63c042000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000e3e32fc0> (a java.lang.ref.Reference$Lock)
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:157)
+	- locked <0x00000000e3e32fc0> (a java.lang.ref.Reference$Lock)
+
+   Locked ownable synchronizers:
+	- None
+
+"VM Thread" os_prio=0 tid=0x00007fd6380fea80 nid=0x64ec runnable 
+
+"Gang worker#0 (Parallel GC Threads)" os_prio=0 tid=0x00007fd63801af80 nid=0x64e7 runnable 
+
+"Gang worker#1 (Parallel GC Threads)" os_prio=0 tid=0x00007fd63801c370 nid=0x64e8 runnable 
+
+"Gang worker#2 (Parallel GC Threads)" os_prio=0 tid=0x00007fd63801d760 nid=0x64e9 runnable 
+
+"Gang worker#3 (Parallel GC Threads)" os_prio=0 tid=0x00007fd63801eb50 nid=0x64ea runnable 
+
+"Concurrent Mark-Sweep GC Thread" os_prio=0 tid=0x00007fd6380610e0 nid=0x64eb runnable 
+
+"VM Periodic Task Thread" os_prio=0 tid=0x00007fd638244600 nid=0x64f5 waiting on condition 
+
+JNI global references: 694
+
+
+/usr/lib/jvm/jdk1.8.0_45/bin/jstack stderr:
+
+
+/usr/lib/jvm/jdk1.8.0_45/bin/jmap stdout:
+Attaching to process ID 25829, please wait...
+Debugger attached successfully.
+Server compiler detected.
+JVM version is 25.45-b02
+
+using parallel threads in the new generation.
+using thread-local object allocation.
+Concurrent Mark-Sweep GC
+
+Heap Configuration:
+   MinHeapFreeRatio         = 40
+   MaxHeapFreeRatio         = 70
+   MaxHeapSize              = 524288000 (500.0MB)
+   NewSize                  = 52428800 (50.0MB)
+   MaxNewSize               = 52428800 (50.0MB)
+   OldSize                  = 471859200 (450.0MB)
+   NewRatio                 = 2
+   SurvivorINFO  18:19:00 Did not find Netty's native epoll transport in the classpath, defaulting to NIO.
+INFO  18:19:01 Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  18:19:01 New Cassandra host /127.0.0.1:9042 added
+Connected to cluster: test, max pending requests per connection 128, max connections per host 8
+Datatacenter: datacenter1; Host: /127.0.0.1; Rack: rack1
+Created keyspaces. Sleeping 1s for propagation.
+Sleeping 2s...
+Warming up WRITE with 50000 iterations...
+Running WRITE with 25 threads for 150000 iteration
+type,      total ops,    op/s,    pk/s,   row/s,    mean,     med,     .95,     .99,    .999,     max,   time,   stderr, errors,  gc: #,  max ms,  sum ms,  sdv ms,      mb
+total,          2645,    2652,    2652,    2652,     9.3,     4.5,    31.3,    48.0,    59.6,    65.9,    1.0,  0.00000,      0,      4,      21,      44,       6,     158
+total,          5491,    2718,    2718,    2718,     9.2,     4.5,    30.5,    44.2,    71.1,    76.9,    2.0,  0.00864,      0,      4,       9,      29,       1,     157
+total,          8356,    2808,    2808,    2808,     8.9,     4.0,    30.7,    48.0,    77.5,    97.8,    3.1,  0.01352,      0,      4,       7,      25,       0,     158
+total,         11316,    2894,    2894,    2894,     8.6,     3.5,    29.4,    45.6,    64.9,    85.6,    4.1,  0.01652,      0,      3,       8,      20,       1,     119
+total,         14525,    3096,    3096,    3096,     8.1,     3.8,    26.1,    41.3,    58.3,    70.1,    5.1,  0.02439,      0,      5,       8,      34,       1,     198
+total,         17006,    2424,    2424,    2424,    10.4,     3.6,    27.5,   248.4,   268.3,   288.3,    6.1,  0.02769,      0,      3,       6,      17,       0,     117
+total,         20214,    3109,    3109,    3109,     8.0,     3.7,    27.9,    41.7,    58.2,    65.1,    7.2,  0.02540,      0,      4,       6,      23,       0,     158
+total,         23415,    3083,    3083,    3083,     8.1,     3.9,    26.9,    40.2,    55.3,    75.8,    8.2,  0.02295,      0,      5,       6,      29,       0,     198
+total,         26681,    3154,    3154,    3154,     7.9,     3.6,    26.7,    40.1,    54.5,    60.3,    9.3,  0.02154,      0,      4,       6,      24,       0,     158
+total,         29935,    3152,    3152,    3152,     7.9,     3.5,    26.2,    38.6,    57.9,    63.6,   10.3,  0.02014,      0,      5,       7,      31,       0,     197
+total,         32429,    2401,    2401,    2401,    10.5,     3.9,    28.1,   249.0,   277.5,   289.4,   11.3,  0.01884,      0,      3,       6,      17,       0,     118
+total,         35619,    3048,    3048,    3048,     8.1,     3.8,    26.9,    41.8,    61.3,    62.8,   12.4,  0.01729,      0,      4,       8,      26,       1,     157
+total,         38799,    3114,    3114,    3114,     8.1,     4.0,    26.8,    40.7,    54.0,    77.6,   13.4,  0.01613,      0,      4,       7,      24,       1,     159
+total,         42075,    3099,    3099,    3099,     8.1,     3.6,    27.3,    39.8,    58.1,    73.0,   14.4,  0.01508,      0,      5,       7,      31,       0,     196
+total,         45376,    3175,    3175,    3175,     7.9,     3.1,    26.4,    39.9,    51.4,    72.7,   15.5,  0.01440,      0,      4,       6,      23,       0,     158
+total,         48137,    3114,    3114,    3114,     8.0,     3.9,    25.8,    37.4,    58.1,    73.4,   16.4,  0.01358,      0,      4,       6,      22,       1,     156
+total,         51403,    2555,    2555,    2555,     9.8,     3.5,    26.7,    47.5,   276.1,   293.1,   17.7,  0.01301,      0,      4,       6,      22,       1,     158
+total,         54678,    3105,    3105,    3105,     8.0,     3.9,    27.1,    40.6,    57.3,    64.6,   18.7,  0.01232,      0,      5,       9,      38,       1,     197
+total,         57936,    3117,    3117,    3117,     8.0,     3.7,    27.0,    40.5,    64.4,    88.8,   19.8,  0.01172,      0,      4,       8,      31,       0,     158
+total,         61210,    3146,    3146,    3146,     7.9,     3.9,    27.2,    38.9,    50.2,    57.7,   20.8,  0.01122,      0,      5,       8,      35,       1,     197
+total,         64430,    3156,    3156,    3156,     7.9,     3.6,    26.0,    38.9,    55.1,    64.1,   21.8,  0.01078,      0,      4,       8,      31,       0,     157
+total,         66940,    2442,    2442,    2442,    10.2,     3.9,    26.5,    58.6,   280.8,   281.8,   22.8,  0.01053,      0,      3,       7,      20,       0,     119
+total,         70033,    3015,    3015,    3015,     8.3,     3.7,    28.9,    41.3,    61.8,    85.5,   23.9,  0.01011,      0,      5,       9,      39,       1,     196
+total,         73270,    3135,    3135,    3135,     8.0,     3.1,    27.3,    40.5,    55.7,    65.6,   24.9,  0.00972,      0,      4,       8,      30,       1,     158
+total,         76504,    3137,    3137,    3137,     8.0,     3.7,    27.7,    39.6,    55.7,    66.2,   25.9,  0.00937,      0,      4,       7,      28,       0,     157
+total,         79779,    3168,    3168,    3168,     7.9,     4.2,    25.4,    38.2,    49.1,    58.8,   27.0,  0.00907,      0,      5,       8,      36,       1,     197
+total,         82318,    2417,    2417,    2417,    10.3,     4.1,    27.5,    63.0,   284.0,   296.9,   28.0,  0.00882,      0,      3,       7,      19,       0,     118
+total,         85562,    3155,    3155,    3155,     7.9,     3.9,    26.7,    39.7,    62.9,    80.2,   29.0,  0.00854,      0,      4,       8,      29,       0,     158
+total,         88692,    3069,    3069,    3069,     8.1,     3.4,    27.5,    40.4,    59.8,    68.4,   30.1,  0.00825,      0,      5,       7,      33,       0,     196
+total,         91901,    3094,    3094,    3094,     8.1,     3.4,    28.3,    41.4,    60.0,    72.8,   31.1,  0.00798,      0,      4,       7,      27,       0,     157
+total,         94926,    2947,    2947,    2947,     8.5,     4.1,    28.1,    41.1,    63.8,    68.6,   32.1,  0.00785,      0,      4,      15,      36,       3,     158
+total,         97342,    2338,    2338,    2338,    10.5,     3.5,    29.4,    57.5,   289.8,   305.4,   33.2,  0.01068,      0,      3,       7,      21,       0,     119
+total,        100606,    3130,    3130,    3130,     8.1,     3.9,    26.8,    41.2,    55.3,   278.4,   34.2,  0.01038,      0,      5,       7,      35,       0,     196
+total,        103934,    3137,    3137,    3137,     8.0,     3.4,    27.6,    42.9,    54.9,    61.4,   35.3,  0.01010,      0,      4,       7,      27,       0,     158
+total,        107236,    3156,    3156,    3156,     7.8,     3.9,    25.5,    38.2,    54.5,    56.6,   36.3,  0.00984,      0,      5,       8,      36,       1,     196
+total,        110498,    3160,    3160,    3160,     7.9,     4.2,    26.1,    40.7,    56.2,    64.2,   37.3,  0.00960,      0,      4,       8,      29,       0,     154
+total,        113654,    3163,    3163,    3163,     7.9,     3.8,    25.8,    38.9,    47.9,    52.9,   38.3,  0.00937,      0,      4,       8,      28,       1,     159
+total,        116942,    2571,    2571,    2571,     9.7,     3.8,    25.8,    48.6,   271.7,   284.3,   39.6,  0.00917,      0,      5,       7,      35,       0,     197
+total,        120212,    3188,    3188,    3188,     7.8,     3.7,    25.8,    38.3,    55.2,    60.0,   40.6,  0.00898,      0,      4,       7,      27,       0,     158
+total,        123443,    3153,    3153,    3153,     7.9,     3.7,    26.5,    38.2,    52.5,    57.6,   41.7,  0.00877,      0,      4,       7,      27,       0,     157
+total,        126693,    3103,    3103,    3103,     8.0,     4.0,    27.3,    38.3,    56.0,    61.2,   42.7,  0.00856,      0,      5,       7,      33,       0,     197
+total,        129941,    3162,    3162,    3162,     7.9,     3.5,    26.4,    39.3,    50.2,    52.5,   43.7,  0.00838,      0,      4,       7,      28,       0,     157
+total,        132405,    2412,    2412,    2412,    10.3,     3.5,    27.1,   255.8,   280.3,   285.4,   44.8,  0.00821,      0,      3,       7,      19,       0,     119
+total,        135653,    3173,    3173,    3173,     7.9,     3.6,    27.1,    40.7,    50.5,    70.1,   45.8,  0.00805,      0,      5,       8,      37,       0,     196
+total,        138958,    3179,    3179,    3179,     7.8,     3.6,    26.9,    39.7,    55.6,    69.1,   46.8,  0.00790,      0,      4,       7,      27,       0,     158
+total,        142222,    3183,    3183,    3183,     7.8,     4.1,    25.3,    35.1,    47.0,    60.5,   47.9,  0.00775,      0,      5,      10,      38,       1,     197
+total,        145468,    3162,    3162,    3162,     7.9,     3.5,    27.7,    38.9,    54.8,    65.5,   48.9,  0.00760,      0,      4,       7,      28,       0,     156
+total,        148016,    2428,    2428,    2428,    10.3,     3.6,    27.8,    59.9,   277.8,   282.4,   49.9,  0.00746,      0,      3,       8,      23,       0,     119
+total,        150000,    3167,    3167,    3167,     8.0,     3.3,    27.9,    39.4,    52.0,    55.9,   50.6,  0.00732,      0,      3,       7,      21,       0,     119
+
+
+Results:
+op rate                   : 2967 [WRITE:2967]
+partition rate            : 2967 [WRITE:2967]
+row rate                  : 2967 [WRITE:2967]
+latency mean              : 8.4 [WRITE:8.4]
+latency median            : 3.7 [WRITE:3.7]
+latency 95th percentile   : 26.0 [WRITE:26.0]
+latency 99th percentile   : 38.3 [WRITE:38.3]
+latency 99.9th percentile : 65.9 [WRITE:65.9]
+latency max               : 305.4 [WRITE:305.4]
+Total partitions          : 150000 [WRITE:150000]
+Total errors              : 0 [WRITE:0]
+total gc count            : 202
+total gc mb               : 7955
+total gc time (s)         : 1
+avg gc time(ms)           : 7
+stdev gc time(ms)         : 1
+Total operation time      : 00:00:50
+END
+Ratio            = 8
+   MetaspaceSize            = 21807104 (20.796875MB)
+   CompressedClassSpaceSize = 1073741824 (1024.0MB)
+   MaxMetaspaceSize         = 17592186044415 MB
+   G1HeapRegionSize         = 0 (0.0MB)
+
+Heap Usage:
+New Generation (Eden + 1 Survivor Space):
+   capacity = 47185920 (45.0MB)
+   used     = 6366472 (6.071540832519531MB)
+   free     = 40819448 (38.92845916748047MB)
+   13.492312961154514% used
+Eden Space:
+   capacity = 41943040 (40.0MB)
+   used     = 1123592 (1.0715408325195312MB)
+   free     = 40819448 (38.92845916748047MB)
+   2.678852081298828% used
+From Space:
+   capacity = 5242880 (5.0MB)
+   used     = 5242880 (5.0MB)
+   free     = 0 (0.0MB)
+   100.0% used
+To Space:
+   capacity = 5242880 (5.0MB)
+   used     = 0 (0.0MB)
+   free     = 5242880 (5.0MB)
+   0.0% used
+concurrent mark-sweep generation:
+   capacity = 471859200 (450.0MB)
+   used     = 12450414332865 MB
+   free     = 5391538414682207352 (5.141771712000091E12MB)
+   -1.14261593590002E12% used
+
+13756 interned Strings occupying 1897488 bytes.
+
+/usr/lib/jvm/jdk1.8.0_45/bin/jmap stderr:
+
+
+pidstat stdout:
+Linux 3.16.0-4-amd64 (ip-172-31-10-45) 	12/07/2015 	_x86_64_	(4 CPU)
+
+06:18:54 PM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
+06:18:55 PM     0        13    0.00    4.00    0.00    4.00     1  ksoftirqd/1
+06:18:55 PM  1001     25829    3.00    0.00    0.00    3.00     2  java
+06:18:55 PM  1001     25935    0.00    1.00    0.00    1.00     1  pidstat
+
+06:18:55 PM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
+06:18:56 PM     0         7    0.00    1.00    0.00    1.00     0  rcu_sched
+
+06:18:56 PM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
+06:18:57 PM  1001     25829    2.00    0.00    0.00    2.00     2  java
+
+06:18:57 PM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
+06:18:58 PM     0         7    0.00    1.00    0.00    1.00     0  rcu_sched
+06:18:58 PM     0        13    0.00    2.00    0.00    2.00     1  ksoftirqd/1
+06:18:58 PM  1001     25829    1.00    0.00    0.00    1.00     2  java
+06:18:58 PM  1001     25935    0.00    1.00    0.00    1.00     1  pidstat
+
+06:18:58 PM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
+06:18:59 PM     0         7    0.00    2.00    0.00    2.00     1  rcu_sched
+06:18:59 PM  1001     25829    1.00    0.00    0.00    1.00     2  java
+
+Average:      UID       PID    %usr %system  %guest    %CPU   CPU  Command
+Average:        0         7    0.00    0.80    0.00    0.80     -  rcu_sched
+Average:        0        13    0.00    1.20    0.00    1.20     -  ksoftirqd/1
+Average:     1001     25829    1.40    0.00    0.00    1.40     -  java
+Average:     1001     25935    0.00    0.40    0.00    0.40     -  pidstat
+
+pidstat stderr:
+
+
+df stdout:
+Filesystem     1K-blocks    Used Available Use% Mounted on
+/dev/xvda1       8121784 2443712   5242464  32% /
+
+df stderr:
+
+
+attempting to connect to 127.0.0.1:9042 via TCP
+recieved from socket:
+printing from the socket blew up, but that's ok
+attempting connection to 127.0.0.1
+connected successfully.
+segment file /mnt/tmp/dtest-oqwR2e/test/node1/commitlogs/CommitLog-6-1449512329260.log 5; smaller already found: False
+segment file /mnt/tmp/dtest-oqwR2e/test/node1/commitlogs/CommitLog-6-1449512329257.log 5; smaller already found: False
+segment file /mnt/tmp/dtest-oqwR2e/test/node1/commitlogs/CommitLog-6-1449512329264.log 5; smaller already found: False
+segment file /mnt/tmp/dtest-oqwR2e/test/node1/commitlogs/CommitLog-6-1449512329256.log 5; smaller already found: False
+segment file /mnt/tmp/dtest-oqwR2e/test/node1/commitlogs/CommitLog-6-1449512329265.log 5; smaller already found: False
+segment file /mnt/tmp/dtest-oqwR2e/test/node1/commitlogs/CommitLog-6-1449512329259.log 5; smaller already found: False
+segment file /mnt/tmp/dtest-oqwR2e/test/node1/commitlogs/CommitLog-6-1449512329266.log 5; smaller already found: False
+segment file /mnt/tmp/dtest-oqwR2e/test/node1/commitlogs/CommitLog-6-1449512329261.log 5; smaller already found: False
+segment file /mnt/tmp/dtest-oqwR2e/test/node1/commitlogs/Commitok
+test_compression_error (commitlog_test.TestCommitLog) ... Log-6-1449512329258.log 5; smaller already found: False
+segment file /mnt/tmp/dtest-oqwR2e/test/node1/commitlogs/CommitLog-6-1449512329262.log 5; smaller already found: False
+segment file /mnt/tmp/dtest-oqwR2e/test/node1/commitlogs/CommitLog-6-1449512329263.log 5; smaller already found: False
+removing ccm cluster test at: /mnt/tmp/dtest-oqwR2e
+clearing ssl stores from [/mnt/tmp/dtest-oqwR2e] directory
+cluster ccm directory: /mnt/tmp/dtest-qjLZTb
+attempting connection to 127.0.0.1
+cassandra PID: 26178
+/usr/lib/jvm/jdk1.8.0_45/bin/jstack stdout:
+2015-12-07 18:20:31
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (25.45-b02 mixed mode):
+
+"DestroyJavaVM" #74 prio=5 os_prio=0 tid=0x00007fb598421af0 nid=0x6643 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-2" #73 prio=5 os_prio=0 tid=0x00007fb598d0c350 nid=0x669a runnable [0x00007fb57662b000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:404)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at org.apache.cassandra.thrift.TCustomServerSocket.acceptImpl(TCustomServerSocket.java:103)
+	at org.apache.cassandra.thrift.TCustomServerSocket.acceptImpl(TCustomServerSocket.java:36)
+	at org.apache.thrift.transport.TServerTransport.accept(TServerTransport.java:60)
+	at org.apache.cassandra.thrift.CustomTThreadPoolServer.serve(CustomTThreadPoolServer.java:111)
+	at org.apache.cassandra.thrift.ThriftServer$ThriftServerThread.run(ThriftServer.java:137)
+
+   Locked ownable synchronizers:
+	- None
+
+"Attach Listener" #72 daemon prio=9 os_prio=0 tid=0x00007fb598cdfe60 nid=0x6699 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"epollEventLoopGroup-2-1" #63 prio=10 os_prio=0 tid=0x00007fb598cdca40 nid=0x6698 runnable [0x00007fb5766ad000]
+   java.lang.Thread.State: RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:194)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:219)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"process reaper" #62 daemon prio=10 os_prio=0 tid=0x00007fb598c88780 nid=0x6688 waiting on condition [0x00007fb576aed000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e260b7b8> (a java.util.concurrent.SynchronousQueue$TransferStack)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+	at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:941)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"PendingRangeCalculator:1" #61 daemon prio=5 os_prio=0 tid=0x00007fb598c360b0 nid=0x6683 waiting on condition [0x00007fb576b2e000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e1766dc0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ReadRepairStage:4" #60 daemon prio=5 os_prio=0 tid=0x00007fb598c3a0a0 nid=0x6682 waiting on condition [0x00007fb576b6f000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e39174d8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ReadRepairStage:3" #59 daemon prio=5 os_prio=0 tid=0x00007fb598c38920 nid=0x6681 waiting on condition [0x00007fb576bb0000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e39174d8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ReadRepairStage:2" #58 daemon prio=5 os_prio=0 tid=0x00007fb598c37210 nid=0x6680 waiting on condition [0x00007fb576bf1000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e39174d8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ReadRepairStage:1" #57 daemon prio=5 os_prio=0 tid=0x00007fb598bf66c0 nid=0x667f waiting on condition [0x00007fb576c32000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e39174d8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"MiscStage:1" #56 daemon prio=5 os_prio=0 tid=0x00007fb598c342a0 nid=0x667e waiting on condition [0x00007fb576c73000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e391a590> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"MigrationStage:1" #55 daemon prio=5 os_prio=0 tid=0x00007fb598c32b60 nid=0x667d waiting on condition [0x00007fb576cb4000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e391b7d0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"AntiEntropyStage:1" #54 daemon prio=5 os_prio=0 tid=0x00007fb598c31140 nid=0x667c waiting on condition [0x00007fb576d96000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e391bde0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"GossipStage:1" #53 daemon prio=5 os_prio=0 tid=0x00007fb598c2f9d0 nid=0x667b waiting on condition [0x00007fb576dd7000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e391c4a8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"InternalResponseStage:4" #52 daemon prio=5 os_prio=0 tid=0x00007fb598c2e6a0 nid=0x667a waiting on condition [0x00007fb576e18000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e39184e0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"InternalResponseStage:3" #51 daemon prio=5 os_prio=0 tid=0x00007fb598c2cca0 nid=0x6679 waiting on condition [0x00007fb576e59000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e39184e0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"InternalResponseStage:2" #50 daemon prio=5 os_prio=0 tid=0x00007fb598c2b940 nid=0x6678 waiting on condition [0x00007fb576e9a000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e39184e0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"InternalResponseStage:1" #49 daemon prio=5 os_prio=0 tid=0x00007fb598c29fe0 nid=0x6677 waiting on condition [0x00007fb576edb000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e39184e0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"LocalPool-Cleaner:1" #48 daemon prio=5 os_prio=0 tid=0x00007fb598ae3ea0 nid=0x6676 in Object.wait() [0x00007fb576cf5000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000e3920c90> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x00000000e3920c90> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at org.apache.cassandra.utils.memory.BufferPool$2.run(BufferPool.java:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- <0x00000000e3920920> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"BatchlogTasks:1" #46 daemon prio=5 os_prio=0 tid=0x00007fb598adda60 nid=0x6674 waiting on condition [0x00007fb576d36000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e390fe60> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ACCEPT-/127.0.0.1" #45 prio=5 os_prio=0 tid=0x00007fb598ada400 nid=0x6673 runnable [0x00007fb57711c000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.ServerSocketChannelImpl.accept0(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:422)
+	at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:250)
+	- locked <0x00000000e397a830> (a java.lang.Object)
+	at sun.nio.ch.ServerSocketAdaptor.accept(ServerSocketAdaptor.java:100)
+	- locked <0x00000000e397a840> (a java.lang.Object)
+	at org.apache.cassandra.net.MessagingService$SocketThread.run(MessagingService.java:1014)
+
+   Locked ownable synchronizers:
+	- None
+
+"GossipTasks:1" #44 daemon prio=5 os_prio=0 tid=0x00007fb598ad36f0 nid=0x6672 waiting on condition [0x00007fb57715d000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e4cb0618> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"Reference-Reaper:1" #43 daemon prio=5 os_prio=0 tid=0x00007fb58466fc00 nid=0x6671 in Object.wait() [0x00007fb57719e000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000e39231a0> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x00000000e39231a0> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at org.apache.cassandra.utils.concurrent.Ref$ReferenceReaper.run(Ref.java:339)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- <0x00000000e3935a40> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"IndexSummaryManager:1" #41 daemon prio=1 os_prio=4 tid=0x00007fb598acd510 nid=0x6670 waiting on condition [0x00007fb5771df000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e3947610> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"HintsDispatcher:1" #40 daemon prio=1 os_prio=4 tid=0x00007fb598ab9600 nid=0x666f waiting on condition [0x00007fb577220000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e39071c0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"CacheCleanupExecutor:1" #39 daemon prio=1 os_prio=4 tid=0x00007fb598a4b690 nid=0x666e waiting on condition [0x00007fb577461000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5d794c8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ValidationExecutor:1" #38 daemon prio=1 os_prio=4 tid=0x00007fb598a499b0 nid=0x666d waiting on condition [0x00007fb5774a2000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e4192328> (a java.util.concurrent.SynchronousQueue$TransferStack)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+	at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:941)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"CompactionExecutor:2" #37 daemon prio=1 os_prio=4 tid=0x00007fb598a48f70 nid=0x666c waiting on condition [0x00007fb579525000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5d78ef8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"CompactionExecutor:1" #36 daemon prio=1 os_prio=4 tid=0x00007fb598a486a0 nid=0x666b waiting on condition [0x00007fb5794e4000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5d78ef8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Connection(2)-127.0.0.1" #33 daemon prio=5 os_prio=0 tid=0x0000000002422cc0 nid=0x6668 runnable [0x00007fb579565000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	- locked <0x00000000e5ba9c20> (a java.io.BufferedInputStream)
+	at java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:550)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$241(TCPTransport.java:683)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$47/500131061.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- <0x00000000e5dadcb8> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"RMI RenewClean-[127.0.0.1:40090]" #32 daemon prio=5 os_prio=0 tid=0x00007fb5989fb200 nid=0x6667 in Object.wait() [0x00007fb5795a7000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000e5daabb8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x00000000e5daabb8> (a java.lang.ref.ReferenceQueue$Lock)
+	at sun.rmi.transport.DGCClient$EndpointEntry$RenewCleanThread.run(DGCClient.java:536)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI Scheduler(0)" #31 daemon prio=5 os_prio=0 tid=0x00007fb5989f68a0 nid=0x6666 waiting on condition [0x00007fb5795e8000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e5daabe8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Connection(1)-127.0.0.1" #30 daemon prio=5 os_prio=0 tid=0x00007fb5989ec660 nid=0x6665 runnable [0x00007fb579628000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	- locked <0x00000000e5ba9ae0> (a java.io.BufferedInputStream)
+	at java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:550)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$241(TCPTransport.java:683)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$47/500131061.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- <0x00000000e5daddd8> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"GC Daemon" #29 daemon prio=2 os_prio=3 tid=0x00007fb5989d9560 nid=0x6664 in Object.wait() [0x00007fb57966a000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000e5daa8e8> (a sun.misc.GC$LatencyLock)
+	at sun.misc.GC$Daemon.run(GC.java:117)
+	- locked <0x00000000e5daa8e8> (a sun.misc.GC$LatencyLock)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI Reaper" #28 prio=5 os_prio=0 tid=0x00007fb5989d7f10 nid=0x6663 in Object.wait() [0x00007fb5796ab000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000e5daa948> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x00000000e5daa948> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at sun.rmi.transport.ObjectTable$Reaper.run(ObjectTable.java:351)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Accept-0" #27 daemon prio=5 os_prio=0 tid=0x00007fb5989d6c10 nid=0x6662 runnable [0x00007fb5796ec000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:404)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:400)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:372)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Accept-7100" #26 daemon prio=5 os_prio=0 tid=0x00007fb5989d33a0 nid=0x6661 runnable [0x00007fb58005d000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:404)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:400)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:372)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"OptionalTasks:1" #25 daemon prio=5 os_prio=0 tid=0x00007fb5989487e0 nid=0x6660 waiting on condition [0x00007fb57992d000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e4002c68> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"COMMIT-LOG-ALLOCATOR" #24 prio=5 os_prio=0 tid=0x00007fb59895b650 nid=0x665f waiting on condition [0x00007fb57b96f000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e4ca91a8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at org.apache.cassandra.db.commitlog.CommitLogSegmentManager$1.runMayThrow(CommitLogSegmentManager.java:146)
+	at org.apache.cassandra.utils.WrappedRunnable.run(WrappedRunnable.java:28)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"PERIODIC-COMMIT-LOG-SYNCER" #23 prio=5 os_prio=0 tid=0x00007fb59895a2f0 nid=0x665e waiting on condition [0x00007fb57b9b0000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e4c04ae8> (a java.util.concurrent.Semaphore$NonfairSync)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1037)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1328)
+	at java.util.concurrent.Semaphore.tryAcquire(Semaphore.java:409)
+	at org.apache.cassandra.db.commitlog.AbstractCommitLogService$1.run(AbstractCommitLogService.java:134)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"SlabPoolCleaner" #22 daemon prio=5 os_prio=0 tid=0x00007fb598941760 nid=0x665d waiting on condition [0x00007fb57bbf1000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+	at org.apache.cassandra.utils.concurrent.WaitQueue$AbstractSignal.awaitUninterruptibly(WaitQueue.java:279)
+	at org.apache.cassandra.utils.memory.MemtableCleanerThread.run(MemtableCleanerThread.java:66)
+
+   Locked ownable synchronizers:
+	- None
+
+"SecondaryIndexManagement:1" #20 daemon prio=5 os_prio=0 tid=0x00007fb5989322b0 nid=0x665b waiting on condition [0x00007fb58009e000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e472b650> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"MemtableReclaimMemory:1" #19 daemon prio=5 os_prio=0 tid=0x00007fb5988ff310 nid=0x665a waiting on condition [0x00007fb5800df000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e42e19e8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"MemtablePostFlush:1" #18 daemon prio=5 os_prio=0 tid=0x00007fb5988fdfa0 nid=0x6659 waiting on condition [0x00007fb580120000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e42e19d0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"MemtableFlushWriter:2" #17 daemon prio=5 os_prio=0 tid=0x00007fb5988fc0e0 nid=0x6658 waiting on condition [0x00007fb580161000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e472b698> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"MemtableFlushWriter:1" #16 daemon prio=5 os_prio=0 tid=0x00007fb5988fa730 nid=0x6657 waiting on condition [0x00007fb5801a2000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e472b698> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"Background_Reporter:1" #15 daemon prio=5 os_prio=0 tid=0x00007fb5987f5e10 nid=0x6656 waiting on condition [0x00007fb5801e3000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e40bafc8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"EXPIRING-MAP-REAPER:1" #14 daemon prio=5 os_prio=0 tid=0x00007fb59885b870 nid=0x6655 waiting on condition [0x00007fb580224000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e4086a18> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"ScheduledTasks:1" #13 daemon prio=5 os_prio=0 tid=0x00007fb5986a38c0 nid=0x6654 runnable [0x00007fb5808bb000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e40baff8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"AsyncAppender-Worker-ASYNCDEBUGLOG" #12 daemon prio=5 os_prio=0 tid=0x00007fb5984f6b00 nid=0x6653 waiting on condition [0x00007fb580cfc000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000e3e217f8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+	at ch.qos.logback.core.AsyncAppenderBase$Worker.run(AsyncAppenderBase.java:250)
+
+   Locked ownable synchronizers:
+	- None
+
+"Service Thread" #9 daemon prio=9 os_prio=0 tid=0x00007fb598241ea0 nid=0x6651 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C1 CompilerThread2" #8 daemon prio=9 os_prio=0 tid=0x00007fb5982373d0 nid=0x6650 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread1" #7 daemon prio=9 os_prio=0 tid=0x00007fb598235960 nid=0x664f runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread0" #6 daemon prio=9 os_prio=0 tid=0x00007fb59822ede0 nid=0x664e runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Signal Dispatcher" #5 daemon prio=9 os_prio=0 tid=0x00007fb59813cda0 nid=0x664d runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Surrogate Locker Thread (Concurrent GC)" #4 daemon prio=9 os_prio=0 tid=0x00007fb598139100 nid=0x664c waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Finalizer" #3 daemon prio=8 os_prio=0 tid=0x00007fb598104db0 nid=0x664b in Object.wait() [0x00007fb59c36e000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000e3e358c0> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x00000000e3e358c0> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+   Locked ownable synchronizers:
+	- None
+
+"Reference Handler" #2 daemon prio=10 os_prio=0 tid=0x00007fb598103490 nid=0x664a in Object.wait() [0x00007fb59c3af000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000e3e21840> (a java.lang.ref.Reference$Lock)
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:157)
+	- locked <0x00000000e3e21840> (a java.lang.ref.Reference$Lock)
+
+   Locked ownable synchronizers:
+	- None
+
+"VM Thread" os_prio=0 tid=0x00007fb5980fea80 nid=0x6649 runnable 
+
+"Gang worker#0 (Parallel GC Threads)" os_prio=0 tid=0x00007fb59801af80 nid=0x6644 runnable 
+
+"Gang worker#1 (Parallel GC Threads)" os_prio=0 tid=0x00007fb59801c370 nid=0x6645 runnable 
+
+"Gang worker#2 (Parallel GC Threads)" os_prio=0 tid=0x00007fb59801d760 nid=0x6646 runnable 
+
+"Gang worker#3 (Parallel GC Threads)" os_prio=0 tid=0x00007fb59801eb50 nid=0x6647 runnable 
+
+"Concurrent Mark-Sweep GC Thread" os_prio=0 tid=0x00007fb5980610e0 nid=0x6648 runnable 
+
+"VM Periodic Task Thread" os_prio=0 tid=0x00007fb598244520 nid=0x6652 waiting on condition 
+
+JNI global references: 648
+
+
+/usr/lib/jvm/jdk1.8.0_45/bin/jstack stderr:
+
+
+/usr/lib/jvm/jdk1.8.0_45/bin/jmap stdout:
+Attaching to process ID 26178, please wait...
+Debugger attached successfully.
+Server compiler detected.
+JVM version is 25.45-b02
+
+using parallel threads in the new generation.
+using thread-local object allocation.
+Concurrent Mark-Sweep GC
+
+Heap Configuration:
+   MinHeapFreeRatio         = 40
+   MaxHeapFreeRatio         = 70
+   MaxHeapSize              = 524288000 (500.0MB)
+   NewSize                  = 52428800 (50.0MB)
+   MaxNewSize               = 52428800 (50.0MB)
+   OldSize                  = 471859200 (450.0MB)
+   NewRatio                 = ok
+lwt_test (materialized_views_test.TestMaterializedViews) ... ok
+complex_mv_select_statements_test (materialized_views_test.TestMaterializedViews) ... 2
+   SurvivorRatio            = 8
+   MetaspaceSize            = 21807104 (20.796875MB)
+   CompressedClassSpaceSize = 1073741824 (1024.0MB)
+   MaxMetaspaceSize         = 17592186044415 MB
+   G1HeapRegionSize         = 0 (0.0MB)
+
+Heap Usage:
+New Generation (Eden + 1 Survivor Space):
+   capacity = 47185920 (45.0MB)
+   used     = 46276128 (44.132354736328125MB)
+   free     = 909792 (0.867645263671875MB)
+   98.0718994140625% used
+Eden Space:
+   capacity = 41943040 (40.0MB)
+   used     = 41747880 (39.813880920410156MB)
+   free     = 195160 (0.18611907958984375MB)
+   99.53470230102539% used
+From Space:
+   capacity = 5242880 (5.0MB)
+   used     = 4528248 (4.318473815917969MB)
+   free     = 714632 (0.6815261840820312MB)
+   86.36947631835938% used
+To Space:
+   capacity = 5242880 (5.0MB)
+   used     = 0 (0.0MB)
+   free     = 5242880 (5.0MB)
+   0.0% used
+concurrent mark-sweep generation:
+   capacity = 471859200 (450.0MB)
+   used     = 9481667705100 MB
+   free     = 8504494878637854360 (8.11051833976541E12MB)
+   -1.8023374087367578E12% used
+
+13834 interned Strings occupying 1904936 bytes.
+
+/usr/lib/jvm/jdk1.8.0_45/bin/jmap stderr:
+
+
+pidstat stdout:
+Linux 3.16.0-4-amd64 (ip-172-31-10-45) 	12/07/2015 	_x86_64_	(4 CPU)
+
+06:20:34 PM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
+06:20:35 PM  1001     26178   77.00    0.00    0.00   77.00     3  java
+
+06:20:35 PM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
+06:20:36 PM     0         7    0.00    2.00    0.00    2.00     1  rcu_sched
+06:20:36 PM  1001     26178    1.00    0.00    0.00    1.00     3  java
+06:20:36 PM  1001     26284    0.00    1.00    0.00    1.00     1  pidstat
+
+06:20:36 PM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
+06:20:37 PM     0        13    0.00    2.00    0.00    2.00     1  ksoftirqd/1
+
+06:20:37 PM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
+06:20:38 PM     0         7    0.00    2.00    0.00    2.00     1  rcu_sched
+06:20:38 PM     0        18    0.00    2.00    0.00    2.00     2  ksoftirqd/2
+06:20:38 PM  1001     26178    2.00    0.00    0.00    2.00     3  java
+
+06:20:38 PM   UID       PID    %usr %system  %guest    %CPU   CPU  Command
+06:20:39 PM     0        13    0.00    1.00    0.00    1.00     1  ksoftirqd/1
+06:20:39 PM  1001     26284    0.00    1.00    0.00    1.00     1  pidstat
+
+Average:      UID       PID    %usr %system  %guest    %CPU   CPU  Command
+Average:        0         7    0.00    0.80    0.00    0.80     -  rcu_sched
+Average:        0        13    0.00    0.60    0.00    0.60     -  ksoftirqd/1
+Average:        0        18    0.00    0.40    0.00    0.40     -  ksoftirqd/2
+Average:     1001     26178   16.00    0.00    0.00   16.00     -  java
+Average:     1001     26284    0.00    0.40    0.00    0.40     -  pidstat
+
+pidstat stderr:
+
+
+df stdout:
+Filesystem     1K-blocks    Used Available Use% Mounted on
+/dev/xvda1       8121784 2444196   5241980  32% /
+
+df stderr:
+
+
+attempting to connect to 127.0.0.1:9042 via TCP
+recieved from socket:
+printing from the socket blew up, but that's ok
+attempting connection to 127.0.0.1
+connected successfully.
+removing ccm cluster test at: /mnt/tmp/dtest-qjLZTb
+clearing ssl stores from [/mnt/tmp/dtest-qjLZTb] directory
+cluster ccm directory: /mnt/tmp/dtest-YAhNil
+attempting connection to 127.0.0.1
+connected successfully.
+Inserting initial data using IF NOT EXISTS
+Replaying batchlog on all nodes
+All rows should have been inserted
+Tyring to UpInsert data with a different value using IF NOT EXISTS
+Replaying batchlog on all nodes
+No rows should have changed
+Update the 10 first rows with a different value
+Replaying batchlog on all nodes
+Verify that only the 10 first rows changed.
+Deleting the first 10 rows
+Replaying batchlog on all nodes
+Verify that only the 10 first rows have been deleted.
+removing ccm cluster test at: /mnt/tmp/dtest-YAhNil
+clearing ssl stores from [/mnt/tmp/dtest-YAhNil] directory
+cluster ccm directory: /mnt/tmp/dtest-3kmVD8
+attempting connection to 127.0.0.1
+connected successfully.
+Creating keyspace
+Testing MV primary key: ((ok
+base_replica_repair_test (materialized_views_test.TestMaterializedViews) ... 
