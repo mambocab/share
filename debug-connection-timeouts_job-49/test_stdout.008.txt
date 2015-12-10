@@ -1,0 +1,3 @@
+nose.config: INFO: Ignoring files matching ['^\\.', '^_', '^setup\\.py$']
+add_write_survey_node_after_mv_test (materialized_views_test.TestMaterializedViews) ... ERROR
+really_complex_repair_test (materialized_views_test.TestMaterializedViews) ... 
